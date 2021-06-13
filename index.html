@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+
+     <link rel="stylesheet" href="style.css">
+
+     <!-- FONT -->
+
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+    <title>Install Bois</title>
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="./1x/logo.png" alt="Logo Install Bois"></a>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Tarifs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>L'appli mobile <br> <b>INSTALL BOIS</b><br></h2>
+                <span>La simplicité et la fiabilité servies sur un plateau</span>
+                <p>La 1ère application pour revendeurs et installateurs de poëles et d'inserts qui les aide à concevoir et mettre en oeuvre leurs installations, et qui valorise leur travail auprès de leurs clients.</p>
+                <a href="#">COMMANDER</a>
+            </div>
+            <div class="imgBox">
+                <img src="./1x/img1.png" alt="Formules d'abonnements" class="formules">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./1x/thumb1.png" onclick="imgSlider('./1x/img1.png');changeCircleColor('#FF9317')"></li>
+            <li><img src="./1x/thumb2.png" onclick="imgSlider('./1x/img2.png');changeCircleColor('#F8B744')"></li>
+            <li><img src="./1x/thumb3.png" onclick="imgSlider('./1x/img3.png');changeCircleColor('#F8B744')"></li>
+            <li><img src="./1x/thumb4.png" onclick="imgSlider('./1x/img4.png');changeCircleColor('#F8B744')"></li>
+            <li><img src="./1x/thumb5.png" onclick="imgSlider('./1x/img5.png');changeCircleColor('#F8B744')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./1x/icons8-facebook-96.png" alt=""></a></li>
+            <li><a href="#"><img src="./1x/icons8-twitter-96.png" alt=""></a></li>
+            <li><a href="#"><img src="./1x/icons8-linkedin-96.png" alt=""></a></li>
+            <li><a href="#"><img src="./1x/icons8-google-plus-96.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.formules').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background =color
+        }
+
+    </script>
+</body>
+</html>
